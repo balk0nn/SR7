@@ -1,0 +1,36 @@
+4. Указанную денежную сумму разменять купюрами номиналом (500, 200, 100) рублей, а также монетами номиналом (10,5, 2, 1) рублей.
+
+Алгоритм:
+
+функция размен:
+	While (S>500) or (S=500) do
+		S:=S-500; 
+		a:=a+1
+	While (S>200) or (s=200) do
+		S:=S-200
+		b:=b+1
+	While (S>100) or (S=100) do
+		S:=S-100
+		c:=c+1
+	While (S>10) or (S=10) do
+		S:=S-10
+		d:=d+1	
+	While (S>5) or (S=5) do 
+		S:=S-5
+		e:=e+1
+	While (S>2) or (S=2) do
+		S:=S-2
+		f:=f+1
+	While (S=1) do
+		g:=g+1
+
+Begin
+	Print “write a natural number”
+	Input S
+	if (S>0) and (type(S)=int) do
+	begin
+		a, b, c, d , e, f, g:=0
+		функция размен
+	end	
+Print “S=500*”a”+200*”b”+100*”c”+10*”d”+5*”e”+2*”f”+g”
+end
